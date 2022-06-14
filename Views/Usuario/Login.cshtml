@@ -1,0 +1,84 @@
+﻿@model UsuarioModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style>
+    body{
+    background-color:black;
+    font-size:14px;
+    color:#fff;
+}
+.simple-login-container{
+    width:300px;
+    max-width:100%;
+    margin:50px auto;
+}
+.simple-login-container h2{
+    text-align:center;
+    font-size:20px;
+}
+
+.simple-login-container .btn-login{
+    background-color:#FF5964;
+    color:#fff;
+}
+a{
+    color:#FF5964;
+    font-size: 16px;
+    text-align:center;
+}
+    
+    </style>
+</head>
+<body>
+<div class="simple-login-container">
+    <h2>Ingresa al Sistema de Registro de Personas </h2>
+    <form asp-action="Login" asp-controller="Usuario" method="post">
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="text" asp-for="Correo" class="form-control" placeholder="Correo">
+             <span asp-validation-for="Correo" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="password" asp-for="Clave" placeholder="Clave" class="form-control">
+             <span asp-validation-for="Clave" class="text-danger"></span>
+        </div>
+    </div>
+
+     @if (ViewData["Mensaje"] != null)
+                        {
+                            <div class="alert alert-primary" role="alert">
+                               @ViewData["Mensaje"]
+                            </div>
+                        }
+
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="submit" class="btn btn-block btn-login" value="Ingresar" >
+        </div>
+    </div>
+     </form>
+    <div class="row">
+        <div class="col-md-12">
+            No tienes cuenta Registrate y Disfruta guardando tu informacion
+            <a  asp-action="Registrar" asp-controller="Usuario" >Registrarse</a>
+        </div>
+    </div>
+</div>
+
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

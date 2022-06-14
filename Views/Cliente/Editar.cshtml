@@ -1,0 +1,50 @@
+﻿@model ClienteModel
+@{
+    ViewData["Title"] = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card text-white bg-dark">
+  <div class="card-header">
+    Editar Cliente
+  </div>
+  <div class="card-body">
+  <form asp-action="Editar" asp-controller="Cliente" method="post">
+      <input  asp-for="IdCliente"  type="hidden" class="form-control">
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input  asp-for="Nombre"  type="text" class="form-control">
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Apellido</label>
+        <input  asp-for="Apellido"  type="text" class="form-control">
+        <span asp-validation-for="Apellido" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">DPI</label>
+        <input  asp-for="DPI"  type="text" class="form-control">
+        <span asp-validation-for="DPI" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">NIT</label>
+        <input  asp-for="NIT"  type="text" class="form-control">
+        <span asp-validation-for="NIT" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Telefono</label>
+        <input  asp-for="Telefono" type="text" class="form-control" >
+        <span asp-validation-for="Telefono" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Correo</label>
+        <input  asp-for="Correo" type="text" class="form-control" >
+        <span asp-validation-for="Correo" class="text-danger"></span>
+    </div>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+       <a asp-action="Listar" asp-controller="Cliente" class="btn btn-warning">Regresara Inicio</a>
+
+  </form>
+  </div>
+</div>
+
