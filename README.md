@@ -1,4 +1,4 @@
-<h1>CONTROL DE INFORMACION CLIENTES👨🏽‍💻 - VERSION 1.0 🚀</h1>
+<h2>CONTROL DE INFORMACION CLIENTES👨🏽‍💻 - VERSION 1.0 🚀</h2>
 <p>
 El siguiente proyecto consiste en un control y manejo de la informacion de los clientes, toda la informacion es almacenada en una base de datos SQL, mediante la utilizacion
 de procesos SQL y ademas se encuentra elaborado en la tecnologia de ASP.NET, teniendo como lenguaje principal c#, tecnologias usadas para la elaboracion del proyecto:
@@ -34,3 +34,21 @@ de procesos SQL y ademas se encuentra elaborado en la tecnologia de ASP.NET, ten
  Me sirvio para poder colocar distintas comprobaciones adentro de nuestras paginas HTML para poder validar distintos campos</li>
 </ul>
 <hr/>
+<h2>Imagenes de Proyecto</h2>
+<img align="center" height="400" width="800" src="https://github.com/EdwarCastellanos5120/CONTROLCLIENTES_ASP.NET_6/blob/master/Img/img1.png"/>
+<hr/>
+<img align="center" height="400" width="800" src="https://github.com/EdwarCastellanos5120/CONTROLCLIENTES_ASP.NET_6/blob/master/Img/img2.png"/>
+<hr/>
+<img align="center" height="400" width="800" src="https://github.com/EdwarCastellanos5120/CONTROLCLIENTES_ASP.NET_6/blob/master/Img/img3.png"/>
+<hr/>
+<img align="center" height="400" width="800" src="https://github.com/EdwarCastellanos5120/CONTROLCLIENTES_ASP.NET_6/blob/master/Img/img4.png"/>
+<hr/>
+<img align="center" height="400" width="800" src="https://github.com/EdwarCastellanos5120/CONTROLCLIENTES_ASP.NET_6/blob/master/Img/img5.png"/>
+<hr/>
+<img align="center" height="400" width="800" src="https://github.com/EdwarCastellanos5120/CONTROLCLIENTES_ASP.NET_6/blob/master/Img/img6.png"/>
+<hr/>
+<img align="center" height="400" width="800" src="https://github.com/EdwarCastellanos5120/CONTROLCLIENTES_ASP.NET_6/blob/master/Img/img7.png"/>
+<hr/>
+<img align="center" height="400" width="800" src="https://github.com/EdwarCastellanos5120/CONTROLCLIENTES_ASP.NET_6/blob/master/Img/img8.png"/>
+<hr/>
+<h1>&copy; Autor: Edwar Castellanos</h1>
